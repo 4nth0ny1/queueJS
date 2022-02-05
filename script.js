@@ -14,6 +14,7 @@ function Queue () {
 
     // additional functions
     this.front = () => collection[0];
+    this.size = () => collection.length;
 }
 
 const q = new Queue();
@@ -24,6 +25,8 @@ console.log(q.print());                 // -=> [1]
 q.enqueue(2);                           // adds 2 to the queue
 console.log(q.print());                 // -=> [1,2]
 console.log(`Front: ${q.front()}`);     // -=> 2
+console.log(`Size: ${q.size()}`);       // -=> 2
+
 
 q.dequeue(2);                           // removes 1 from the queue
 console.log(q.print());                 // -=> [2]
