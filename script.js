@@ -1,8 +1,7 @@
 function Queue () {
     collection = [];
-    this.print = function() {
+    this.print = () => {
         return collection;
-        // console.log(collection);
     };
 
     this.enqueue = (element) => {
